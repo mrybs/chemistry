@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu";
+}
+.element{
+    width: 105px;
+    height: 103px;
+    .letter{
+        font-size: 32px;
+        font-weight: 900;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .name{
+        font-size: 11px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .mass{
+        font-size: 12px;
+        font-weight: 700;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .charge{
+        background: white;
+        font-size: 10px;
+        width: 22px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-radius: 18px;
+        border: 1px solid transparent;
+        text-align: center;
+        font-weight: 700;
+        position: relative;
+    }
+    .electronegativity{
+        position: relative;
+        top: -38px;
+        font-size: 12px;
+    }
+    .atomic-radius, .ionization-energy, .electron-affinity, .electronic-configuration{
+        font-size: 10px;
+        position: relative;
+        top: -38px;
+        left: 5px;
+    }
+    .electronic-configuration{
+        top: -50px;
+    }
+    .ionization-energy{
+        font-weight: 700;
+    }
+    .electron-affinity{
+        top: -49px;
+        left: 60px;
+    }
+    .atomic-radius::after{
+        content: " pm";
+    }
+    .ionization-energy::after{
+        content: " eV";
+    }
+    .electron-distribution{
+        font-size: 8px;
+        position: relative;
+        top: -140px;
+        text-align: right;
+        list-style-type: none;
+    }
+}
+
+.a{
+    .charge{
+        top: -55px;
+        right: -55px;
+    }
+    .electronegativity{
+        right: -60px;
+    }
+    .electron-distribution{
+        text-align: right;
+        right: 5px;
+    }
+}
+
+.b{
+    text-align: right;
+    .charge{
+        top: -55px;
+        right: -25px;
+    }
+    .electronegativity{
+        right: 60px;
+    }
+    .electron-distribution{
+        text-align: left;
+        left: 5px;
+    }
+}
+
+.s{
+    background: pink;
+}
+.p{
+    background: darkkhaki;
+}
+.d{
+    background: cornflowerblue;
+}
+
+table{
+    table-layout: auto;
+    border-spacing: 0;
+}
+td{
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+}
+table{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+tr:first-of-type{
+    background: lightgray;
+    text-align: center;
+    td>span{
+        width: 28px;
+        display: inline-block
+    }
+    td::before{
+        content: "a";
+        position: relative;
+        left: -23px;
+    }
+    td::after{
+        content: "b";
+        position: relative;
+        right: -23px;
+    }
+}
