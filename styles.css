@@ -8,6 +8,8 @@
 .element{
     width: 105px;
     height: 103px;
+    min-width: 105px;
+    min-height: 103px;
     .letter{
         font-size: 32px;
         font-weight: 900;
@@ -127,18 +129,4 @@ table{
 tr:first-of-type{
     background: lightgray;
     text-align: center;
-    td>span{
-        width: 28px;
-        display: inline-block
-    }
-    td::before{
-        content: "a";
-        position: relative;
-        left: -23px;
-    }
-    td::after{
-        content: "b";
-        position: relative;
-        right: -23px;
-    }
 }
