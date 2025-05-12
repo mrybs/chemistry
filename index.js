@@ -44,7 +44,7 @@ function setCellContent(table, rowIndex, colIndex, content) {
 }
 
 function setElement(element, table){
-    setCellContent(table, element.period, element.group-1, `
+    setCellContent(table, element.period, element.group, `
         <div class="element ${element.type} ${(element.type === 'd' || element.type === 'f') ? 'b' : 'a'}">
             <div class="letter">${element.letter}</div>
             <div class="name">${element.name}</div>

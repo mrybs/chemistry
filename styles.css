@@ -74,6 +74,13 @@
         list-style-type: none;
     }
 }
+div.element{
+    user-select: none;
+    cursor: pointer;
+}
+td:not(.element){
+    background: lightgray;
+}
 
 .a{
     .charge{
@@ -126,7 +133,10 @@ table{
     border-right: 1px solid black;
     border-bottom: 1px solid black;
 }
-tr:first-of-type{
+tr:first-of-type,
+td:first-of-type{
     background: lightgray;
     text-align: center;
+    padding: 3px;
+    user-select: none;
 }
