@@ -7,7 +7,7 @@
 }
 .element{
     width: 105px;
-    height: 103px;
+    height: 115px;
     min-width: 105px;
     min-height: 103px;
     .letter{
@@ -28,36 +28,30 @@
         margin-right: 5px;
     }
     .charge{
-        background: white;
         font-size: 10px;
-        width: 22px;
-        padding-top: 6px;
-        padding-bottom: 6px;
-        border-radius: 18px;
-        border: 1px solid transparent;
-        text-align: center;
         font-weight: 700;
-        position: relative;
+        padding-top: 5px;
+        margin-left: 5px;
     }
     .electronegativity{
         position: relative;
-        top: -38px;
+        top: -13px;
         font-size: 12px;
     }
     .atomic-radius, .ionization-energy, .electron-affinity, .electronic-configuration{
         font-size: 10px;
         position: relative;
-        top: -38px;
+        top: -15px;
         left: 5px;
     }
     .electronic-configuration{
-        top: -50px;
+        top: -25px;
     }
     .ionization-energy{
         font-weight: 700;
     }
     .electron-affinity{
-        top: -49px;
+        top: -26px;
         left: 60px;
     }
     .atomic-radius::after{
@@ -69,7 +63,7 @@
     .electron-distribution{
         font-size: 8px;
         position: relative;
-        top: -140px;
+        top: -130px;
         text-align: right;
         list-style-type: none;
     }
@@ -84,8 +78,7 @@ td:not(.element){
 
 .a{
     .charge{
-        top: -55px;
-        right: -55px;
+        
     }
     .electronegativity{
         right: -60px;
@@ -99,8 +92,7 @@ td:not(.element){
 .b{
     text-align: right;
     .charge{
-        top: -55px;
-        right: -25px;
+        
     }
     .electronegativity{
         right: 60px;
